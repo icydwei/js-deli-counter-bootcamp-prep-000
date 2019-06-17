@@ -18,11 +18,15 @@ function nowServing (line) {
 function currentLine (line) {
   if (line.length > 0) {
     var message = ["The line is currently:"]
-    var j = 0;
-    if (j == (line.length - 1)) {
-      var lineadd = (j+1, ". ", line[j])
-      
-    }
-    return line
-  } else return "The line is currently empty."
+    for (var j = 0; j < (line.length); j++) {
+      if(j === (line.length-1)) {
+      var lineadd1 = (j+1, ". ", line[j])
+      message.push(lineadd1)
+      } 
+      if (j < line.length) {
+      var lineadd2 = (j+1, ". ", line[j], ",")
+      message.push(lineadd2)
+      }
+    } else return "The line is currently empty."
+  }
 }
