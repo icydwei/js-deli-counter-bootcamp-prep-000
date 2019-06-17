@@ -14,3 +14,9 @@ function nowServing (line) {
     return "There is nobody waiting to be served!"
   }
 }
+
+function currentLine (line) {
+  if (line.length > 0) {
+    return line
+  }
+}
