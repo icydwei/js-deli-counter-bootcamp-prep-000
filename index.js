@@ -17,7 +17,7 @@ function nowServing (line) {
 
 function currentLine (line) {
   if (line.length > 0) {
-    var message = ['The line is currently:']
+    var message = []
     for (var j = 0; j < (line.length); j++) {
       if(j === (line.length-1)) {
         var lineadd1 = (`${j+1}. ${line[j]}`)
@@ -27,6 +27,6 @@ function currentLine (line) {
       var lineadd2 = (`${j+1}. ${line[j]}`)
       message.push(lineadd2)
       }
-    } return message
+    } return 'The line is currently:' message
   } else return "The line is currently empty."
 }
