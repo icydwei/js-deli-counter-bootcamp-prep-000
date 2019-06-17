@@ -3,3 +3,7 @@ function takeANumber (line, customername) {
   var position = line.length
   return (`Weclome, ${customername}. You are number ${position} in line.`)
 }
+
+function nowServing (line) {
+  if (line.length > 0)
+}
