@@ -24,7 +24,7 @@ function currentLine (line) {
         message.push(lineadd1)
       } 
       if (j < (line.length-1)) {
-      var lineadd2 = (`${j+1}. ${line[j]} `)
+      var lineadd2 = (`${j+1}. ${line[j]}`)
       message.push(lineadd2)
       }
     } return "The line is currently: " + message
