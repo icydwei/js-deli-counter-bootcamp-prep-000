@@ -19,8 +19,9 @@ function currentLine (line) {
   if (line.length > 0) {
     var message = ["The line is currently:"]
     var j = 0;
-    while (j < line.length) {
-      var lineadd = j+1, ". ", line[j]
+    if (j == (line.length - 1)) {
+      var lineadd = (j+1, ". ", line[j])
+      
     }
     return line
   } else return "The line is currently empty."
