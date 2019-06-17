@@ -27,6 +27,6 @@ function currentLine (line) {
       var lineadd2 = (`${j+1}. ${line[j]}`)
       message.push(lineadd2)
       }
-    } return "The line is currently: " + message.join(" ")
+    } return "The line is currently: " + message.join(", ")
   } else return "The line is currently empty."
 }
