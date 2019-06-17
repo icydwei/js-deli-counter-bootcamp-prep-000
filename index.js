@@ -27,6 +27,6 @@ function currentLine (line) {
       var lineadd2 = (j+1, ". ", line[j], ",")
       message.push(lineadd2)
       }
-    } else return "The line is currently empty."
-  }
+    } 
+  } else return "The line is currently empty."
 }
