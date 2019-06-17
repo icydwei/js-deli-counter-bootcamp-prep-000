@@ -15,6 +15,8 @@ function nowServing (line) {
   }
 }
 
+//initial atempt
+
 function currentLine (line) {
   if (line.length > 0) {
     var message = []
