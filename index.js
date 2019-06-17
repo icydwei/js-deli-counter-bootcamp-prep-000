@@ -4,6 +4,3 @@ function takeANumber (line, customername) {
   return (`Welcome, ${customername}. You are number ${position} in line.`)
 }
 
-function nowServing (line) {
-  if (line.length > 0)
-}
