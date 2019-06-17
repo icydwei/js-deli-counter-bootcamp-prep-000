@@ -20,7 +20,7 @@ function currentLine (line) {
     var message = ['The line is currently:']
     for (var j = 0; j < (line.length); j++) {
       if(j === (line.length-1)) {
-        var lineadd1 = (j+1, ". ", line[j])
+        var lineadd1 = (`${j}+1, ". ", ${line[j]}`)
         message.push(lineadd1)
       } 
       if (j < line.length) {
